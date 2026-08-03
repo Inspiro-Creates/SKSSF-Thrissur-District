@@ -1,3 +1,4 @@
+
 // @ts-nocheck
 // console.log("coucou");
 const uploadedImageDiv = document.getElementById("uploadedImage");
@@ -47,8 +48,8 @@ function processImage() {
     // minCropBoxWidth:200,
     // minCropBoxHeight:200,
     //cropBoxMovable: false,
-    // minContainerHeight  : 200,
-    // minContainerWidth   : 200,
+    // minContainerHeight  : 400,
+    // minContainerWidth   : 400,
     // minCanvasWidth      : 200,
     // minCanvasHeight     : 200,
     // maxCropBoxWidth     : 100,
@@ -57,7 +58,7 @@ function processImage() {
     // maxContainerWidth   : 200,
     // maxCanvasWidth      : 200,
     // maxCanvasHeight     : 200,
-    aspectRatio:  100/100,  
+    aspectRatio:  2705.58/2705.58,  
     autoCropArea: 1,
     background: true,
     movable: false,
@@ -79,8 +80,8 @@ function processImage() {
     viewMode: 2,
 
     data: {
-      width: 3000,
-      height:3000,
+      width: 1025,
+      height:1025,
     },
     crop(event) {
       console.log(
@@ -104,14 +105,14 @@ function cropImage() {
 function draw() {
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
-  ctx.font = " 40px Roboto-bold";
+  ctx.font = " 70px Roboto";
   ctx.textAlign = "center";
-    ctx.fillStyle = '#fff200';
+  ctx.fillStyle = 'black';
 
   // Draw slice
   ctx.drawImage(
     document.getElementById("croppedImage"),
-    153.09,
+   153.09,
     147,
     2705.58,
     2705.58
@@ -123,7 +124,7 @@ function draw() {
 
   // Draw frame
   ctx.drawImage(document.getElementById("frame"), 0, 0);
-  ctx.fillText(document.getElementById("username").value, 540, 1000);
+  ctx.fillText(document.getElementById("username").value, 696, 2272);
 }
 
 // downlad function
