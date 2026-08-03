@@ -2,11 +2,11 @@ body {
   font-family: "Roboto", sans-serif;
   font-family: 'Manjari', sans-serif;
   /* background-color: #f8fafb;  */
-  background: linear-gradient(-45deg, #b8340a, #330404);
+  background: linear-gradient(-45deg, #1c3954, #0a2745);
 }
 .btn-hover.color-2 {
-  background-image: linear-gradient(to right, #330404, #b8340a);
-  box-shadow: 0 4px 15px 0 #330404;
+  background-image: linear-gradient(to right, #0a2745, #1c3954);
+  box-shadow: 0 4px 15px 0 #0a2745;
 }
 
 
