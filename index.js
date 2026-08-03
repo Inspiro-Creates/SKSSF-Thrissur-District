@@ -163,7 +163,7 @@ $(function () {
      toggleBtn.innerHTML = "Show List";
    }
  });
-
+background: linear-gradient(-45deg, #1c3954, #0a2745);
 
 // username hide 
 
