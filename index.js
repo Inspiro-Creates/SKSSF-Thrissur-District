@@ -23,8 +23,8 @@ function getImage() {
   newImg.id = "myGreatImage";
   // uploadedImageDiv.style.border = "4px solid #FCB514";
   // uploadedImageDiv.innerHTML
-  uploadedImageDiv.style.width = " 2710px";
-  uploadedImageDiv.style.height = "1891px";
+  uploadedImageDiv.style.width = " 250px";
+  uploadedImageDiv.style.height = "250px";
   uploadedImageDiv.appendChild(newImg);
   myGreatImage = document.getElementById("myGreatImage");
 
@@ -58,7 +58,7 @@ function processImage() {
     // maxContainerWidth   : 200,
     // maxCanvasWidth      : 200,
     // maxCanvasHeight     : 200,
-    aspectRatio:  150/150,  
+    aspectRatio:  2710/1891,  
     autoCropArea: 1,
     background: true,
     movable: false,
