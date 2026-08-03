@@ -23,8 +23,8 @@ function getImage() {
   newImg.id = "myGreatImage";
   // uploadedImageDiv.style.border = "4px solid #FCB514";
   // uploadedImageDiv.innerHTML
-  uploadedImageDiv.style.width = " 2710px";
-  uploadedImageDiv.style.height = "1891px";
+  uploadedImageDiv.style.width = " 500px";
+  uploadedImageDiv.style.height = "500px";
   uploadedImageDiv.appendChild(newImg);
   myGreatImage = document.getElementById("myGreatImage");
 
@@ -48,8 +48,8 @@ function processImage() {
     // minCropBoxWidth:200,
     // minCropBoxHeight:200,
     //cropBoxMovable: false,
-    // minContainerHeight  : 400,
-    // minContainerWidth   : 400,
+    // minContainerHeight  : 300,
+    // minContainerWidth   : 300,
     // minCanvasWidth      : 200,
     // minCanvasHeight     : 200,
     // maxCropBoxWidth     : 100,
@@ -58,7 +58,7 @@ function processImage() {
     // maxContainerWidth   : 200,
     // maxCanvasWidth      : 200,
     // maxCanvasHeight     : 200,
-    aspectRatio:  2710/1891,  
+    aspectRatio:  150/150,  
     autoCropArea: 1,
     background: true,
     movable: false,
@@ -80,8 +80,8 @@ function processImage() {
     viewMode: 2,
 
     data: {
-      width: 1025,
-      height:1025,
+      width: 3000,
+      height:3000,
     },
     crop(event) {
       console.log(
@@ -116,10 +116,10 @@ function draw() {
     146,
     2710,
     1891
-    // 100,
+    // 900,
     // 0,
-    // 1500,
-    // 1500
+    // 900,
+    // 900
   );
 
   // Draw frame
