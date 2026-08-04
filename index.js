@@ -136,7 +136,7 @@ function download() {
     .toDataURL("image/png")
     .replace("image/png", "image/octet-stream");
   download.setAttribute("href", image);
-  download.setAttribute("download", "Poster By Inspiro Creates.jpg");
+  download.setAttribute("download", "Inspiro Creates.jpg");
 }
 
 // download button disaplay
