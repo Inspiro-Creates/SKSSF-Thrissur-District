@@ -129,14 +129,21 @@ function draw() {
 
 // downlad function
 
+let downloadCount = Number(localStorage.getItem("downloadCount")) || 0;
+
 function download() {
-  var download = document.getElementById("download");
-  var image = document
+  const download = document.getElementById("download");
+
+  const image = document
     .getElementById("canvas")
     .toDataURL("image/png")
     .replace("image/png", "image/octet-stream");
-  download.setAttribute("href", image);
-  download.setAttribute("download", "Inspiro Creates.jpg");
+
+  downloadCount++;
+  localStorage.setItem("downloadCount", downloadCount);
+
+  download.href = image;
+  download.download = `Inspiro_Creates_${downloadCount}.png`;
 }
 
 // download button disaplay
